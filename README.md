@@ -1,11 +1,12 @@
 # -RFID-door-lock-system
-Prototype for a high-security RFID door lock system
-Our project is a prototype for a high-security RFID door lock system that would be used in an area 
+Developed with Tom Lancaster (TinkerTavern)
+
+A Prototype for a high-security RFID door lock system that would be used in an area 
 where multi factor authentication is necessary. 
 
-The program involves 2 Arduinos, a master and a slave. The master runs all the hardware components, including an RFID 
+The program involves 2 Arduinos, a primary and a secondary. The primary runs all the hardware components, including an RFID 
 scanner, 2 buttons, a piezo speaker, a screen and a servo (to represent the door lock mechanism). The 
-slave Arduino controls the security represented as a bubble machine, and does all the verification. 
+secondary Arduino controls the security represented as a bubble machine, and does all the verification. 
 They’re both connected through Bluetooth serial, using HC-05 modules.
 Once a face is detected, a timer is started, and the Arduino prompts the user to scan an RFID card. If 
 correct they are then asked to input an answer to the question “What is the answer to the universe?” 
